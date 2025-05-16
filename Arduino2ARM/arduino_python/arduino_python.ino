@@ -10,6 +10,8 @@
 #define SERVOMIN 60      // 0 度脈衝
 #define SERVOMAX 580     // 180 度脈衝
 
+print("hello world!")
+
 char val;
 int R_back[] = {0,1,2};
 int L_back[] = {4,5,6};
