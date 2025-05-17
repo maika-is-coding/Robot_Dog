@@ -1,4 +1,6 @@
 // 燈光控制區塊
+#include "global.h"
+
 void light_close() {
   for (int j = 0; j < LED_COUNT; j++) {
     strip.setPixelColor(j, 0, 0, 0);

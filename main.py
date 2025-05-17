@@ -2,7 +2,7 @@
 import cv2
 from OpenCV2Arduino import detect_target, SignalSender, AppUI, StateManager
 
-COM_PORT = 'COM9'
+COM_PORT = 'COM11'
 BAUD_RATE = 9600
 
 

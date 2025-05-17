@@ -1,9 +1,13 @@
 // 腳部與頭部控制區塊
+#include "global.h"
+
+//轉換脈衝與角度
 void moveServo(int channel, int angle) {
   int pulse = map(angle, 0, 180, SERVOMIN, SERVOMAX);
   myServo.setPWM(channel, 0, pulse);
 }
 
+//頭部控制區塊
 void head_zero(){
   Serial.println("head zero");
   myServo.setPWM(head[0], 0, 320);
@@ -22,6 +26,7 @@ void head_right(){
   delay(50);
 }
 
+//腳部控制區塊
 void initialized(){
   //右後方
   Serial.println("RB,initialized...");

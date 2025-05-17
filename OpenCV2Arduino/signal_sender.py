@@ -5,7 +5,7 @@ import time
 import threading
 
 class SignalSender:
-    def __init__(self, port='COM8', baudrate=9600):
+    def __init__(self, port='COM5', baudrate=9600):
         try:
             self.ser = serial.Serial(port, baudrate, timeout=1)
             time.sleep(2)
